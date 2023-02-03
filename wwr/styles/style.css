@@ -1,3 +1,6 @@
+/* adding font import statement */
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:ital,wght@1,300&display=swap");
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -10,6 +13,7 @@ nav a {
     color: #023047;
     text-decoration: none;
     background-color: #8ecae6;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -17,7 +21,8 @@ nav a:hover {
     background-color: #023047;
 }
 
-#hero-msg h1, #hero-msg h4 {
+#hero-msg h1,
+#hero-msg h4 {
     text-align: center;
     color: #023047;
 }
@@ -34,6 +39,10 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 #background {
     height: 725px;
     color: white;
@@ -41,36 +50,64 @@ main section {
 
 body {
     background-color: #023047;
+    font-family: Ubuntu, Sans-Serif, "Work Sans";
+    font-size: 22px;
+    padding: 0;
 }
+
 header {
     background-color: #ffb703;
 }
 
-.book, .join {
+.book,
+.join {
     background-color: #023047;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
-.book:hover, .join:hover {
+
+.book:hover,
+.join:hover {
     background-color: #023047;
     color: white;
 }
+
 #background {
     background-color: #023047;
 }
+
 .msg {
     background-color: #023047;
-}
-footer {
-    background-color: #023047;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
-.join, footer p, footer a, .book {
+footer {
+    background-color: #023047;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+.join,
+footer p,
+footer a,
+.book {
     color: #ffb703;
     text-decoration: none;
 }
 
-.join:hover, footer p, footer a:hover, .book:hover {
+footer .social img {
+    padding-top: 15px;
+}
+
+.join:hover,
+footer p,
+footer a:hover,
+.book:hover {
     color: white;
 }
 
@@ -85,19 +122,51 @@ footer p {
 
 .home-title {
     color: #ffb703;
+    font-family: Lora, "Times New Roman";
+    font-size: 2em;
+    margin-top: 10px;
 }
+
+h2 {
+    margin: 0;
+}
+
 h4 {
     color: white;
 }
 
 .msg h2 {
     color: white;
+    font-family: Lora, "Times New Roman";
 }
 
 .msg p {
     color: white;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
-.icon, .logo {
+.icon {
+    padding-top: 10;
+}
+
+.icon,
+.logo {
     width: 80px;
+}
+
+/* spacing */
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid black;
 }
