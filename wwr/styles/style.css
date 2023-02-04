@@ -122,7 +122,7 @@ footer p {
 
 .home-title {
     color: #ffb703;
-    font-family: Lora, "Times New Roman";
+    font-family: Lora, "Times New Roman", "serif";
     font-size: 2em;
     margin-top: 10px;
 }
@@ -137,7 +137,7 @@ h4 {
 
 .msg h2 {
     color: white;
-    font-family: Lora, "Times New Roman";
+    font-family: Lora, "Times New Roman", "sans-serif";
 }
 
 .msg p {
@@ -147,7 +147,7 @@ h4 {
 }
 
 .icon {
-    padding-top: 10;
+    padding-top: 10px;
 }
 
 .icon,
