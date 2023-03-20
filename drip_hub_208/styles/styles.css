@@ -12,22 +12,43 @@ body {
     align-items: center;
   }
 
-  
-  
-  header h1 {
-    margin: 0;
+  #about {
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+
+  #about img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 25%;
+    border: 10px solid transparent;
+    border-color: black;
+    box-shadow: 1px 5px 25px 5px red;
   }
   
-  header nav ul {
-    list-style: none;
-    margin: 0;
-    display: flex;
+  header a {
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
   
   header nav a {
-    padding: 0 1em;
-    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  header nav a {
+    padding: 10 1em;
+    text-decoration: red wavy underline;
     color: red;
+    transition: background-color 2s ease-out 100ms
+  }
+
+  header a:hover {
+    background-color:white;
   }
   
   main {
@@ -75,8 +96,25 @@ body {
   }
   
   footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    display: grid;
     background-color: lightgray;
-    padding: 1em;
-    text-align: center;
+    text-align: left;
   }
-  
+
+  .social {
+    text-align: right;
+  }
+
+  .social img {
+    border-radius: 25%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 25%;
+    box-shadow: 1px 5px 25px 5px red;
+  }
+
+  .social:hover {
+    border-color: black;
+  }
