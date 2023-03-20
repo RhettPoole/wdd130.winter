@@ -28,7 +28,6 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   display: grid;
-  background-color: linear-gradient(to bottom, black, white);
   color: red;
   padding: 1em;
   display: flex;
