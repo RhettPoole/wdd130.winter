@@ -1,120 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&family=Ubuntu:ital,wght@1,300&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: lightgrey;
-  }
-  
-  header {
-    background-color: black;
-    color: red;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  --heading-font: "Roboto", "Ubuntu", "Source Sans Pro";
+  --paragraph-font: "Source Sans Pro", Helvetica, sans-serif;
+  background: linear-gradient(to bottom,black, white);
+  color: black;
+}
 
-  #about {
-    text-align: center;
-    margin-left: 400px;
-    margin-right: 400px;
-  }
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
 
-  #about img {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border-radius: 25%;
-    border: 10px solid transparent;
-    border-color: black;
-    box-shadow: 1px 5px 25px 5px red;
-  }
-  
-  header a {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  
-  header nav a {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  
-  header nav a {
-    padding: 10 1em;
-    text-decoration: red wavy underline;
-    color: red;
-    transition: background-color 2s ease-out 100ms
-  }
+p,
+h3,
+a {
+  font-family: var(--paragraph-font);
+}
 
-  header a:hover {
-    background-color:white;
-  }
-  
-  main {
-    padding: 1em;
-  }
-  
-  section h2 {
-    margin: 1em 0 0.5em;
-  }
-  
-  section button {
-    background-color: lightblue;
-    color: white;
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  section form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  section form label,
-  section form input,
-  section form textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    box-sizing: border-box;
-  }
-  
-  section form input[type="text"],
-  section form input[type="email"] {
-    border: 1px solid gray;
-    border-radius: 5px;
-  }
-  
-  section form textarea {
-    border: 1px solid gray;
-    border-radius: 5px;
-    height: 100px;
-  }
-  
-  footer {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    display: grid;
-    background-color: lightgray;
-    text-align: left;
-  }
+header {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  display: grid;
+  background-color: linear-gradient(to bottom,black, white);
+  color: red;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .social {
-    text-align: right;
-  }
+#about {
+  text-align: center;
+  margin-left: 400px;
+  margin-right: 400px;
+}
 
-  .social img {
-    border-radius: 25%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border-radius: 25%;
-    box-shadow: 1px 5px 25px 5px red;
-  }
+#about img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 25%;
+  border: 10px solid transparent;
+  border-color: black;
+  box-shadow: 1px 5px 25px 5px red;
+}
 
-  .social:hover {
-    border-color: black;
-  }
+header a {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+header nav a {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header nav a {
+  padding: 10px 1em;
+  text-decoration: red wavy underline;
+  color: red;
+  transition: background-color 2s ease-out 100ms;
+}
+
+header h1 {
+  grid-column: 2/3;
+  text-align: center;
+  margin: 0 auto;
+}
+
+header a:hover {
+  background-color: white;
+}
+
+main {
+  padding: 1em;
+}
+
+section h2 {
+  margin: 1em 0 0.5em;
+}
+
+section button {
+  background-color: #333;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+section form label,
+section form input,
+section form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+}
+
+section form input[type="text"],
+section form input[type="email"] {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+section form textarea {
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 100px;
+}
+
+footer {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  display: grid;
+}
+
+footer h4 {
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.social {
+  text-align: right;
+}
+
+.social img {
+  border-radius: 25%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 25%;
+  box-shadow: 1px 5px 25px 5px red;
+}
+
+.social:hover {
+  border-color: black;
+}
+
+/* Products page CSS */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.shoe-card {
+  background-color: black;
+  border: 1px solid grey;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.shoe-card h2,
+.shoe-card h3 {
+  color: red;
+}
+
+h3 {
+  color: black;
+}
+
+.shoe-card a {
+  margin-top: -5px;
+  color: red;
+}
+
+.shoe-image {
+  width: 100%;
+}
+
+.shoe-image:hover {
+  transform: scale(1.5);
+  transition: 1s ease-out 100ms;
+}
+
+.shoe-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.shoe-description {
+  margin-top: 20px;
+}
+
+.buy-button {
+  background-color: #333;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.buy-button:hover {
+  transform: scale(1.2);
+  transition: 1s ease-out 100ms;
+  background-color: red;
+}
